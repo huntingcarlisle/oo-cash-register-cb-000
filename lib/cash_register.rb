@@ -10,6 +10,7 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     @total += price * quantity
+    
     @items << title
     
   end
@@ -22,6 +23,8 @@ class CashRegister
       return "There is no discount to apply."
     end
   end
+  
+ 
   
 end
 
